@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UConnect</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/post-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div id="main-container">
+    <div id="menubar" class="main-bar">
+        <img id="uconnect-logo" src="images/logo-wide.png" alt="UConnect main icon">
+        <ul>
+            <li>
+                <i class="material-icons">home</i>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <i class="material-icons">mail</i>
+                <a href="">Inbox</a>
+            </li>
+            <li>
+                <i class="material-icons">settings</i>
+                <a href="">Connections</a>
+            </li>
+            <li>
+                <i class="material-icons">thumb_up</i>
+                <a href="">Liked</a>
+            </li>
+            <li>
+                <i class="material-icons">settings</i>
+                <a href="">Settings</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="feed" class="main-bar">
+        <div id="feed-postbox">
+            <div class="postbox" id="topbar">
+                <a href="">Home</a>
+                <a href="" id="topbar-username">Johnson-8</a>
+                <img src="images/profile-pic.png" alt="UConnect main icon">
+            </div>
+            <div class="postbox" id="midbar">
+                <form action="">
+                    <textarea id="post-text-input" name="postText" placeholder="what's on your mind?" maxlength="200" rows="5" cols="40"></textarea>
+                </form>
+            </div>
+            <div class="postbox" id="botbar">
+                <button>
+                    <i class="material-icons">upload_file</i>
+                    Attach Image
+                </button>
+                <input id="postInput" onclick="postInputOnClick()" type="submit" value="Submit">
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-info">
+                <img class="user-profile-pic" src="images/profile-pic1.png" alt="user profile picture">
+                <a href="">daNewStudent</a>
+                <p>12/5/2022 @23:43</p>
+            </div>
+            <div class="post-content">
+                <p>idk how to finish the math114 assignment, anyone got a good youtube video for the solution?</p>
+            </div>
+            <div class="post-buttons">
+                <button>
+                    <i class="material-icons">thumb_up</i>
+                    <span>6</span>
+                </button>
+                <button>
+                    <i class="material-icons">share</i>
+                    <span>1</span>
+                </button>    
+            </div>
+            <div class="post-type-comment">
+                <input type="text" name="userComment" id="userComment1">
+                <button type="submit"><i class="material-icons">send</i></button>
+            </div>
+            <hr>
+            <div class="post-comments">
+                <div class="post-info">
+                    <img class="user-profile-pic" src="images/profile-pic3.png" alt="user profile picture">
+                    <a href="">j3ff</a>
+                    <p>12/5/2022 @23:43</p>
+                </div>
+                <div class="post-content">
+                    <p>here try <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">this</a> video, i found it to be pretty useful</p>
+                </div>
+                <div class="post-buttons">
+                    <button>
+                        <i class="material-icons">thumb_up</i>
+                        <span>159</span>
+                    </button>
+                    <button>
+                        <i class="material-icons">share</i>
+                        <span>8</span>
+                    </button>    
+                </div>
+                <hr>
+                <div class="post-info">
+                    <img class="user-profile-pic" src="images/profile-pic2.png" alt="user profile picture">
+                    <a href="">Gary1999</a>
+                    <p>12/5/2022 @23:43</p>
+                </div>
+                <div class="post-content">
+                    <p>Can vouch! The video helped me through all of 114.</p>
+                </div>
+                <div class="post-buttons">
+                    <button>
+                        <i class="material-icons">thumb_up</i>
+                        <span>43</span>
+                    </button>
+                    <button>
+                        <i class="material-icons">share</i>
+                        <span>2</span>
+                    </button>    
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-info">
+                <img class="user-profile-pic" src="images/profile-pic4.png" alt="user profile picture">
+                <a href="">MikuN</a>
+                <p>12/5/2022 @23:43</p>
+            </div>
+            <div class="post-content">
+                <p>new building looks good at night!</p>
+                <img src="images/post-picture1.jpg" alt="picture1">
+            </div>
+            <div class="post-buttons">
+                <button>
+                    <i class="material-icons">thumb_up</i>
+                    <span>419</span>
+                </button>
+                <button>
+                    <i class="material-icons">share</i>
+                    <span>50</span>
+                </button>    
+            </div>
+            <div class="post-type-comment">
+                <input type="text" name="userComment" id="userComment2">
+                <button type="submit"><i class="material-icons">send</i></button>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-info">
+                <img class="user-profile-pic" src="images/profile-pic2.png" alt="user profile picture">
+                <a href="">Gary1999</a>
+                <p>12/5/2022 @23:43</p>
+            </div>
+            <div class="post-content">
+                <iframe src="https://www.youtube.com/embed/1v2ChD5XRXQ" frameborder="0"></iframe>
+            </div>
+            <div class="post-buttons">
+                <button>
+                    <i class="material-icons">thumb_up</i>
+                    <span>1337</span>
+                </button>
+                <button>
+                    <i class="material-icons">share</i>
+                    <span>117</span>
+                </button>    
+            </div>
+            <div class="post-type-comment">
+                <input type="text" name="userComment" id="userComment2">
+                <button type="submit"><i class="material-icons">send</i></button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="sidebar" class="main-bar">
+        <p id="siderbar-recommendations">Recommended Connections</p>
+        <div class="rec-box">
+            <div class="sidebar-profile-info">
+                <img src="images/profile-pic2.png" alt="profile pic 2">
+                <a href="">Gary1999</a>
+            </div>
+            <p>2 mutual connections.</p>
+            <button>Connect<i class="material-icons">arrow_forward</i></button>
+        </div>
+        <div class="rec-box">
+            <div class="sidebar-profile-info">
+                <img src="images/profile-pic1.png" alt="profile pic 1">
+                <a href="">daNewStudent</a>
+            </div>
+            <p>1 mutual connection.</p>
+            <button>Connect<i class="material-icons">arrow_forward</i></button>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
