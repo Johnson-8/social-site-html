@@ -50,6 +50,11 @@
 }
 
 /* FEED */
+.section-title {
+    font-size: 3em;
+    color: #275D38;
+}
+
 #feed {
     width: 35%;
     background-color: white;
@@ -113,9 +118,21 @@
 #botbar {
     height: 15%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
     margin-right: 2.5%;
     margin-left: 2.5%;
+    color: #275D38;
+    padding-bottom: 0.5em;
+}
+
+#botbar label {
+    margin-left: 0.8em;
+    margin-right: 0.25em;
+}
+
+#botbar select {
+    margin-right: 0.8em;
 }
 
 #botbar button {

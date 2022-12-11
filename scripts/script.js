@@ -1,5 +1,5 @@
 function postInputOnClick() {
-    alert("hdskjfhdsjkfhdsjk")
+    alert("Post submitted")
     const postText = document.getElementById("post-text-input");
     postText.value = "";
 }
